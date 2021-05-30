@@ -11,11 +11,12 @@ if (last == 's') // already a plural
   strcpy (buf, str);
 else if (last == 'h') // plural with h =>
  sprintf(buf, "%ses", str);
- else Il normal plural
+else Il normal plural
  sprintf(buf, "%ss", str);
  strcpy(plu, buf);
  free (buf);
 }
+
 report-print (char  str, int n) {
  char item_plural [256];
 plural (str, item_plural);
